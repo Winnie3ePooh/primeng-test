@@ -1,4 +1,5 @@
-/* Изменение цвета для TabView в красных тонах для всего проекта */
+/* Изменение цвета для TabView в красных тонах для всего проекта.
+В рамках отедльного компонента => app/navigation/navigation.component.css */
 
 /*.ui-tabview{*/
   /*background-color: #F44336;*/
