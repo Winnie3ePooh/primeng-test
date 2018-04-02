@@ -1,0 +1,14 @@
+.centered {
+  margin: 0 auto;
+}
+
+h1.center {
+  text-align: center;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}

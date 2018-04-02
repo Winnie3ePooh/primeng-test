@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+/* Изменение цвета для TabView в красных тонах для всего проекта */
+
+/*.ui-tabview{*/
+  /*background-color: #F44336;*/
+  /*box-shadow: 0px 0px 83px 13px #C64749;*/
+/*}*/
+/*.ui-tabview .ui-tabview-nav > li {*/
+  /*background-color: #C62828;*/
+/*}*/
+/*.ui-tabview .ui-tabview-nav {*/
+  /*margin-top: 20px;*/
+/*}*/
+
+/*.ui-tabview .ui-tabview-panels {*/
+  /*min-height: 600px;*/
+  /*border-radius: 20px;*/
+  /*min-height: 600px;*/
+  /*background-color: #B71C1C;*/
+/*}*/
+
+/*.ui-tabview .ui-tabview-nav > li.ui-state-default {*/
+  /*border-color: #B71C1C;*/
+  /*background-color: #C62828;*/
+/*}*/
+/*.ui-tabview .ui-tabview-nav > li:not(.ui-state-active):not(.ui-state-disabled):hover {*/
+  /*background-color: #B71C1C;*/
+/*}*/
+
+/*.ui-tabview .ui-tabview-nav > li.ui-state-active {*/
+  /*background-color: #B71C1C;*/
+/*}*/
+
+/*.ui-state-default a .ui-tabview-title{*/
+  /*color: #000000;*/
+/*}*/
+/*.ui-state-active a .ui-tabview-title{*/
+  /*color: #FFFFFF;*/
+/*}*/

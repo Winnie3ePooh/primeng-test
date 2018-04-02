@@ -1,0 +1,27 @@
+<div *ngIf="loading; else loaded">
+  <app-loading-animation [loading]="loading"></app-loading-animation>
+</div>
+<ng-template #loaded>
+  <p-dataView [value]="articles">
+    <ng-template let-article pTemplate="listItem">
+      <div class="ui-g">
+        <div class="ui-g-9 article-container">
+          <div class="ui-g-12 article-title">
+            {{article.title}}
+          </div>
+          <div class="ui-g-4">
+            <a class="link" [href]="article.url">Перейти <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-dataView>
+  <div class="ui-g">
+    <div class="ui-g-8 buttons-menu">
+      <p-button label="Предыдущая" icon="fa fa-arrow-left" iconPos="left"
+                (onClick)="changePage(pager.urlPrev)" [disabled]="pager.urlPrev === ''"></p-button>
+      <p-button label="Следующая" icon="fa fa-arrow-right" iconPos="right"
+                (onClick)="changePage(pager.urlNext)" [disabled]="pager.urlNext === ''"></p-button>
+    </div>
+  </div>
+</ng-template>
