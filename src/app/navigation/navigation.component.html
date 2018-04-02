@@ -6,7 +6,7 @@
     <p-tabPanel header="Приветствие">
       Слева представлено меню потоков с Хабрахабр, чилсо новых публикаций у которых больше 2-х.
     </p-tabPanel>
-    <p-tabPanel *ngFor="let item of test" header="{{item.title}}" [cache]="false">
+    <p-tabPanel *ngFor="let item of test" header="{{item.title}}: {{item.counter}}" [cache]="false">
       <ng-template pTemplate="content"  class="my-style">
         <app-flows-content [tabURL]="item.url"></app-flows-content>
       </ng-template>
